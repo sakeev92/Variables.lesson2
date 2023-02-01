@@ -18,7 +18,7 @@ public class Main {
         long d = 1000000;
         float e = 3.76f;
         double f = 2.65;
-        System.out.println(a);
+        System.out.println("Значение переменной a с типом int равно " + int);
         System.out.println(b);
         System.out.println(c);
         System.out.println(d);
@@ -83,8 +83,7 @@ public class Main {
         byte totalCans = 120;
         byte oneClassWhiteCans = 2;
         byte oneClassBrownCans = 4;
-        int totalCansClass = oneClassWhiteCans + oneClassBrownCans;
-        int totalClass = totalCans / totalCansClass;
+        int totalClass = totalCans / (oneClassWhiteCans + oneClassBrownCans);
         int totalWhiteCans = totalClass * oneClassWhiteCans;
         int totalBrownCans = totalClass * oneClassBrownCans;
         System.out.println("В школе, где " + totalClass + " классов, нужно " + totalWhiteCans + " банок белой краски и " + totalBrownCans + " банок коричневой краски");
@@ -95,13 +94,13 @@ public class Main {
         System.out.println("Задача 6");
         byte bananas = 5;
         byte oneBananasGr = 80;
-        short milk = 200;
+        short milk = 2;
         byte oneMilkGr = 105;
         byte IceCreamSundae = 2;
         byte oneCreamSundaeGr = 100;
         byte RawEggs = 4;
         byte oneRawEggsGr = 70;
-        long totalGr = (bananas * oneBananasGr) + (oneMilkGr * 2) + (IceCreamSundae * oneCreamSundaeGr) + (oneRawEggsGr * RawEggs);
+        long totalGr = (bananas * oneBananasGr) + (oneMilkGr * milk) + (IceCreamSundae * oneCreamSundaeGr) + (oneRawEggsGr * RawEggs);
         float totalKg = totalGr / 1000f;
         System.out.println("Вес спортзавтрака, составило " + totalGr + " гр");
         System.out.println("Вес спортзавтрака, составило " + totalKg + " кг");
